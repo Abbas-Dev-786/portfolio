@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { slideInFromLeft, slideInFromRight, slideInFromTop } from "../../utils";
 import { SparklesIcon } from "@heroicons/react/24/solid";
+import { Link } from "react-router-dom";
 
 const HeroContent = () => {
   return (
@@ -43,12 +44,14 @@ const HeroContent = () => {
           deliver optimal performance. Optimizing web applications for
           efficiency and scalability.
         </motion.p>
-        <motion.a
-          variants={slideInFromLeft(1)}
-          className="px-6 py-3 text-l font-semibold button-primary hover:bg-purple-700 text-center text-white cursor-pointer rounded-lg max-w-[200px] mt-3"
-        >
-          View Projects!
-        </motion.a>
+        <Link to="/projects">
+          <motion.button
+            variants={slideInFromLeft(1)}
+            className="px-6 py-3 text-l font-semibold button-primary hover:bg-purple-700 text-center text-white cursor-pointer rounded-lg max-w-[200px] mt-3"
+          >
+            View Projects!
+          </motion.button>
+        </Link>
       </div>
 
       <motion.div variants={slideInFromRight(0.8)} className="hero-img">

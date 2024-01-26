@@ -1,6 +1,11 @@
+import { motion } from "framer-motion";
+
 const Contact = () => {
   return (
-    <div
+    <motion.div
+      initial={{ width: 0 }}
+      animate={{ width: "100%" }}
+      exit={{ x: window.innerWidth, transition: { duration: 0.4 } }}
       className="w-full min-h-[75vh] mt-20 flex flex-col gap-10 items-center justify-center"
       data-scroll-section
     >
@@ -64,7 +69,7 @@ const Contact = () => {
           <p>+91-6232747253</p>
         </a>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -1,41 +1,42 @@
+import { Link } from "react-router-dom";
 import ProjectCard from "./ProjectCard";
 
 const data = [
   {
     id: 1,
-    name: "Scrape Zone",
-    title: "E-Commerce Product Price Tracker",
+    name: "Homyz",
+    title: "Property Management System",
     description:
-      "Worked on some important features like referral reward system for students, dark mode, state management etc.Used nodemailer to send emails as a product price fluctuation notification, these emails are triggered on the basis of cron jobs.",
-    siteLink: "https://scrape-zon.vercel.app/",
-    repoLink: "https://github.com/rahulmore01/scrapeZon",
-  },
-  {
-    id: 4,
-    name: "Scrape Zone",
-    title: "E-Commerce Product Price Tracker",
-    description:
-      "Worked on some important features like referral reward system for students, dark mode, state management etc.Used nodemailer to send emails as a product price fluctuation notification, these emails are triggered on the basis of cron jobs.",
-    siteLink: "https://scrape-zon.vercel.app/",
-    repoLink: "https://github.com/rahulmore01/scrapeZon",
+      "A full-stack real estate website that combines a React front-end, Nodejs back-end, MongoDB database, and user authentication via Google OAuth. This webapp helps realtors list and manage properties and a seamless user experience for potential buyers.",
+    siteLink: "https://homyz-amb.netlify.app/",
+    repoLink: "https://github.com/Abbas-Dev-786/homyz",
   },
   {
     id: 2,
-    name: "Scrape Zone",
-    title: "E-Commerce Product Price Tracker",
+    name: "Hatimi Retreats",
+    title: "Sports Court Booking Platform",
     description:
-      "Worked on some important features like referral reward system for students, dark mode, state management etc.Used nodemailer to send emails as a product price fluctuation notification, these emails are triggered on the basis of cron jobs.",
-    siteLink: "https://scrape-zon.vercel.app/",
-    repoLink: "https://github.com/rahulmore01/scrapeZon",
+      "It  aims to revolutionize the way sports enthusiasts book and enjoy their favorite activities, providing a centralized and efficient platform for sports court reservations.This platform offers a interface for users to  book, and manage reservations for various sports courts.",
+    siteLink: "https://sports.hatimiproperties.com/",
+    repoLink: "https://github.com/Abbas-Dev-786/Hatimi_retreats",
   },
   {
     id: 3,
-    name: "Scrape Zone",
-    title: "E-Commerce Product Price Tracker",
+    name: "Finanseer",
+    title: "Machine Learning Dashboard",
     description:
-      "Worked on some important features like referral reward system for students, dark mode, state management etc.Used nodemailer to send emails as a product price fluctuation notification, these emails are triggered on the basis of cron jobs.",
-    siteLink: "https://scrape-zon.vercel.app/",
-    repoLink: "https://github.com/rahulmore01/scrapeZon",
+      "A dashboard tailored for predicting prices using linear regression models. It is an ideal tool for users seeking straightforward price predictions using Scatter plots, trend lines, and histograms by linear regression techniques.",
+    siteLink: "https://finanseer-ruby.vercel.app/",
+    repoLink: "https://github.com/Abbas-Dev-786/finanseer",
+  },
+  {
+    id: 4,
+    name: "Realtime Multiplayer Game",
+    title: "Rock Paper Scissor Game",
+    description:
+      "This is a simple yet exciting realtime multiplayer Rock Paper Scissors game built using React, SocketIO, Nodejs, and Express. Players can engage in thrilling battles with their friends or other online opponents or also they can play with bot.",
+    siteLink: "https://rrp-amb.netlify.app/",
+    repoLink: "https://github.com/Abbas-Dev-786/rrp",
   },
 ];
 
@@ -50,6 +51,13 @@ const ProjectContainer = () => {
           <ProjectCard key={el.id} {...el} />
         ))}
       </div>
+
+      <Link
+        to="/projects"
+        className="px-6 py-3 text-l font-semibold button-primary hover:bg-purple-700 text-center text-white cursor-pointer rounded-lg max-w-[200px] mt-10"
+      >
+        View More Projects!
+      </Link>
     </div>
   );
 };

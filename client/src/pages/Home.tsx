@@ -1,8 +1,8 @@
-import GetInTouch from "../components/common/GetInTouch";
-import ExperienceContainer from "../components/experience/ExperienceContainer";
 import HeroSection from "../components/home/HeroSection";
 import ProjectContainer from "../components/projects/ProjectContainer";
 import SkillSection from "../components/skills/SkillSection";
+import ExperienceContainer from "../components/experience/ExperienceContainer";
+import GetInTouch from "../components/common/GetInTouch";
 
 const Home = () => {
   return (

@@ -1,10 +1,17 @@
+import { motion } from "framer-motion";
 import ExperienceContainer from "../components/experience/ExperienceContainer";
 
 const Experience = () => {
   return (
-    <div className="w-100 min-h-[75vh] mt-20" data-scroll-section>
+    <motion.div
+      className="w-100 min-h-[75vh] mt-20"
+      initial={{ width: 0 }}
+      animate={{ width: "100%" }}
+      exit={{ x: window.innerWidth, transition: { duration: 0.4 } }}
+      data-scroll-section
+    >
       <ExperienceContainer />
-    </div>
+    </motion.div>
   );
 };
 
