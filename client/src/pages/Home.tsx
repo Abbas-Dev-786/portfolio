@@ -1,4 +1,3 @@
-// import StarsCanvas from "../components/common/StarBackground";
 import GetInTouch from "../components/common/GetInTouch";
 import ExperienceContainer from "../components/experience/ExperienceContainer";
 import HeroSection from "../components/home/HeroSection";
@@ -10,7 +9,6 @@ const Home = () => {
     <div className="w-100 h-100" data-scroll-section>
       <HeroSection />
       <ProjectContainer />
-      {/* <StarsCanvas /> */}
       <SkillSection />
       <ExperienceContainer />
       <GetInTouch />
