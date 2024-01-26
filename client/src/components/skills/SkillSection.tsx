@@ -95,7 +95,7 @@ const SkillSection = () => {
             loop
             muted
             autoPlay
-            src="../../../public/images/cards-video.webm"
+            src="./images/cards-video.webm"
           />
         </div>
       </div>

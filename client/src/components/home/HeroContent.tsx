@@ -53,7 +53,7 @@ const HeroContent = () => {
 
       <motion.div variants={slideInFromRight(0.8)} className="hero-img">
         <img
-          src="../../../../public/images/mainIconsdark.svg"
+          src="./images/mainIconsdark.svg"
           alt="work icons"
           className="w-full h-full hidden md:block"
           // height={650}
