@@ -1,16 +1,17 @@
 import { useRef } from "react";
-import { LocomotiveScrollProvider } from "react-locomotive-scroll";
-import Footer from "./components/common/Footer";
-import Navbar from "./components/common/Navbar";
-import Home from "./pages/Home";
-
-import "locomotive-scroll/src/locomotive-scroll.scss";
 import { Route, Routes } from "react-router-dom";
+import { LocomotiveScrollProvider } from "react-locomotive-scroll";
+import "locomotive-scroll/src/locomotive-scroll.scss";
+
+import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
 import Experience from "./pages/Experience";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+
+import Footer from "./components/common/Footer";
+import Navbar from "./components/common/Navbar";
 
 const App = () => {
   const containerRef = useRef(null);
@@ -32,7 +33,6 @@ const App = () => {
         ref={containerRef}
       >
         <Navbar />
-
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
