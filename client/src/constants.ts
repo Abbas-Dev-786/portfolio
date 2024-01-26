@@ -80,21 +80,6 @@ export const FRONTEND_SKILL = [
   },
 ];
 
-export const Socials = [
-  {
-    name: "Discord",
-    src: "/instagram.svg",
-  },
-  {
-    name: "Facebook",
-    src: "/facebook.svg",
-  },
-  {
-    name: "Instagram",
-    src: "/discord.svg",
-  },
-];
-
 export const MORE_SKILLS = [
   {
     skill_name: "Stripe Payment",
@@ -300,5 +285,20 @@ export const MAIN_SKILL = [
     Image: "/solidity.png",
     width: 70,
     height: 70,
+  },
+];
+
+export const Socials = [
+  {
+    name: "Discord",
+    src: "/instagram.svg",
+  },
+  {
+    name: "Facebook",
+    src: "/facebook.svg",
+  },
+  {
+    name: "Instagram",
+    src: "/discord.svg",
   },
 ];

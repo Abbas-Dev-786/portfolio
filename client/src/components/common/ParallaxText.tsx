@@ -67,7 +67,7 @@ const ParallaxText = ({ baseVelocity = 100, text }: ParallaxProps) => {
   return (
     <div className="flex flex-nowrap m-0 overflow-hidden tracking-tighter leading-tight whitespace-nowrap rotate-[-3deg]">
       <motion.div
-        className="font-semibold uppercase text-4xl flex flex-nowrap whitespace-nowrap"
+        className="font-semibold uppercase text-2xl md:text-4xl flex flex-nowrap whitespace-nowrap"
         style={{ x, animationDirection: "alternate" }}
       >
         {[...text, ...text, ...text].map((t, i) => (

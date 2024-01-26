@@ -1,17 +1,19 @@
 // import StarsCanvas from "../components/common/StarBackground";
+import GetInTouch from "../components/common/GetInTouch";
 import ExperienceContainer from "../components/experience/ExperienceContainer";
 import HeroSection from "../components/home/HeroSection";
-import ProjectSection from "../components/home/ProjectSection";
+import ProjectContainer from "../components/projects/ProjectContainer";
 import SkillSection from "../components/skills/SkillSection";
 
 const Home = () => {
   return (
     <div className="w-100 h-100" data-scroll-section>
       <HeroSection />
-      <ExperienceContainer />
+      <ProjectContainer />
       {/* <StarsCanvas /> */}
       <SkillSection />
-      <ProjectSection />
+      <ExperienceContainer />
+      <GetInTouch />
     </div>
   );
 };

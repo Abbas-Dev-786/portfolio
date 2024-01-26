@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,6 +7,11 @@
 .cursive {
   font-family: "Cedarville Cursive", cursive;
 }
+
+.myPopppins {
+  font-family: "Poppins", sans-serif;
+}
+
 .Welcome-text {
   background: linear-gradient(
       0deg,
@@ -133,4 +139,3 @@ html.has-scroll-smooth {
     );
   background-size: 107px 107px;
 }
-

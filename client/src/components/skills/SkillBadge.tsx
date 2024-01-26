@@ -18,7 +18,7 @@ const SkillBadge = ({ src, width, height, index }: Props) => {
     visible: { opacity: 1 },
   };
 
-  const animationDelay = 0.3;
+  const animationDelay = 0.125;
   return (
     <motion.div
       ref={ref}

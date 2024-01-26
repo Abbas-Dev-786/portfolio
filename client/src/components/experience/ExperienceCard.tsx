@@ -1,4 +1,14 @@
-const ExperienceCard = ({ company, jobTitle, logo, dates, text }) => {
+interface CardProps {
+  company: string;
+  jobTitle: string;
+  logo: string;
+  dates: string;
+  text: string[];
+}
+
+const ExperienceCard = (props: CardProps) => {
+  const { company, jobTitle, logo, dates, text } = props;
+
   return (
     <div className="w-full flex flex-col items-center justify-center gap-10 bg-[#23232386] py-6 px-4 md:py-10 rounded-3xl lg:flex-row lg:gap-4 lg:px-10 lg:py-14 border">
       <div className="h-[200px] w-[200px] flex items-center justify-center border border-slate-500 rounded-full">
