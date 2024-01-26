@@ -30,16 +30,18 @@ const data = [
 const ExperienceContainer = () => {
   return (
     <div
-      className="flex flex-col items-center justify-center mb-40"
-      id="projects"
+      className="flex flex-col items-center justify-center mb-40 md:mx-20"
+      id="experience"
     >
-      <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20">
+      <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-10">
         My Experience
       </h1>
 
-      {data?.map((item) => (
-        <ExperienceCard key={item.id} {...item} />
-      ))}
+      <div className="w-full flex gap-7 flex-col items-center justify-center px-5 md:px-0">
+        {data?.map((item) => (
+          <ExperienceCard key={item.id} {...item} />
+        ))}
+      </div>
     </div>
   );
 };
