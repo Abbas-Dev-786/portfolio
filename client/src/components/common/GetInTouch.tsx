@@ -82,7 +82,7 @@ const GetInTouch = () => {
             </p>
           </a>
         </div>
-        <img src="./../../../public/images/msg.webp" alt="feedback-img" />
+        <img src="./images/msg.webp" alt="feedback-img" />
       </div>
       {/* </div> */}
     </div>

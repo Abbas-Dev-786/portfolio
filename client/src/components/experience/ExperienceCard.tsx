@@ -16,7 +16,7 @@ const ExperienceCard = (props: CardProps) => {
           alt="company-logo"
           width="250"
           height="250"
-          src={`./../../../public/images/${logo}`}
+          src={`./images/${logo}`}
         />
       </div>
       <div className="flex-grow">

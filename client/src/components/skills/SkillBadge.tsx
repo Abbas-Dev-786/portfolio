@@ -29,7 +29,7 @@ const SkillBadge = ({ src, width, height, index }: Props) => {
       transition={{ delay: index * animationDelay }}
     >
       <img
-        src={`../../../public/images${src}`}
+        src={`./images${src}`}
         width={width}
         height={height}
         alt="skill image"

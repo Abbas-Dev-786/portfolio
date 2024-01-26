@@ -12,10 +12,7 @@ const HeroSection = () => {
         style={{ top: "-40%" }}
       >
         <video autoPlay muted loop className="object-cover">
-          <source
-            src="../../../../public/images/blackhole.webm"
-            type="video/webm"
-          />
+          <source src="./images/blackhole.webm" type="video/webm" />
         </video>
       </div>
 
