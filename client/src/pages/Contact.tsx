@@ -46,7 +46,7 @@ const Contact = () => {
         </a>
         <a
           className="flex flex-col items-center justify-center gap-8 border border-card_border rounded-xl  hover:bg-black w-72 py-6 z-[2] bg-card_bg"
-          href="https://api.whatsapp.com/send?phone=919309897103"
+          href="https://api.whatsapp.com/send?phone=916232747253"
           target="_blank"
         >
           <svg
