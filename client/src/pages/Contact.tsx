@@ -1,13 +1,18 @@
+import ScheduleCalender from "../components/common/ScheduleCalender";
+
 const Contact = () => {
   return (
     <div
       className="w-full min-h-[75vh] mt-20 flex flex-col gap-10 items-center justify-center"
       data-scroll-section
     >
-      <h1 className="text-[40px] capitalize font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+      <h1 className="text-[40px] md:mt-20 p-1 md:p-0 text-center capitalize font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
         Contact Me to discuss about the projects
       </h1>
-      <div className="flex flex-col items-center gap-10 text-gray-300 lg:flex-row ">
+
+      <ScheduleCalender />
+
+      <div className="flex flex-col items-center md:mt-20 gap-10 text-gray-300 lg:flex-row ">
         <div className="z-[2] bg-card_bg">
           <button className="flex flex-col items-center justify-center gap-8 border border-card_border rounded-xl  hover:bg-black py-6 w-72">
             <svg
